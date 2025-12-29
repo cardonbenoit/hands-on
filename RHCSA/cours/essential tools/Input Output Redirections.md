@@ -14,15 +14,15 @@ tags: [shell, cli]
 ## 1) Concepts clés  
 ### Définitions  
 **Flux** et **Descripteurs de flux**  
- STDIN 0  
- STDOUT 1  
- STDERR 2  
+ | STDIN | 0 |  
+ | STDOUT | 1 |  
+ | STDERR | 2 | 
 
 **Redirections**  
- **>** ecrase  
- **>>**  concatene  
- **<** `cmd < fic.txt` alimente cmd avec le contenu de fic.txt   
- **|** `cmd1 | cmd2` cmd1 alimente STDOUT et cmd2 le lit via STDIN   
+ | **>** | ecrase |  
+ | **>>**  | concatene | 
+ | **<** | `cmd < fic.txt` alimente cmd avec le contenu de fic.txt |  
+ | **|** | `cmd1 | cmd2` cmd1 alimente STDOUT et cmd2 le lit via STDIN |  
 
 ### Exemples  
  `cmd 1> stdout.log 2> stderr.log`  
