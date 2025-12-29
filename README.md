@@ -6,6 +6,6 @@
 >        <li> Wifi multi-SSID</li>
 >        <li> Lab sous PVE</li>
 >    </ul>  
-> </details>  
+> </details>
 > <strong>RHCSA: Garder notes de lectures et documentations</strong></br>  
 > <strong>Lab maison</strong>
