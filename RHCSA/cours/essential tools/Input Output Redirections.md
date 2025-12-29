@@ -60,7 +60,8 @@ affiche et ecrit a l'ecran
 
 ⚠️  Attention la redirection est initiee par le shell donc le sudo doit etre mis sur la commande qui ecrit
 ```bash
-echo "test" | sudo tee /root/test.txt```
+echo "test" | sudo tee /root/test.txt
+```
 
 ===
 📌 À retenir
