@@ -6,5 +6,6 @@
 > - Wi-Fi multi-SSID
 > - Lab sous PVE
 > 
-> </details><strong>RHCSA : garder notes de lecture et documentation</strong><br />
+> </details>
+<p><strong>RHCSA : garder notes de lecture et documentation</strong></p>
 > <strong>Lab maison</strong>
