@@ -6,34 +6,33 @@ date: 2025-12-29
 level: "Intermediate"
 tags: [shell, cli]
 ---
-
-## 0) Objectifs
-- []
-- []
-
+## Objectifs
+- Flux et Descripteur
+- commande tee
+- Utilisation de EOF 
 
 ## 1) Concepts clés
 ### Définitions
-Flux et Descripteurs de flux 
+**Flux** et **Descripteurs de flux** 
 - STDIN 0
 - STDOUT 1
 - STDERR 2
 
-Redirections
+**Redirections**
 - **>** ecrase
 - **>>**  concatene
 - **<** `cmd < fic.txt` alimente cmd avec le contenu de fic.txt 
 - **|** `cmd1 | cmd2` cmd1 alimente STDOUT et cmd2 le lit via STDIN 
 
 ### Exemples
-`cmd 1> stdout.log 2> stderr.log`
-`sort < noms.txt`
-`ps aux | grep sshd`
+- `cmd 1> stdout.log 2> stderr.log`
+- `sort < noms.txt`
+- `ps aux | grep sshd`
 
 ## 2) Redirections combinees
-⚠️  `cmd 2>&1 > log-partiel.log` stderr va vers **la ou va stdout** qui pour le moment est l'ecran, PUIS stdout va dans le fichier
-⚠️  `cmd > log-tout.log 2>&1` stdout va dans le fichier, PUIS stderr va **la au va** stdout
-📌 `cmd &> log-tout.log`
+- ⚠️  `cmd 2>&1 > log-partiel.log` stderr va vers **la ou va stdout** qui pour le moment est l'ecran, PUIS stdout va dans le fichier
+- ⚠️  `cmd > log-tout.log 2>&1` stdout va dans le fichier, PUIS stderr va **la au va** stdout
+- 📌 `cmd &> log-tout.log`
 
 ## 3) Here-strings et Here-documents : <<< et <<
 
@@ -41,23 +40,26 @@ Redirections
 `wc -w <<< "bonjour tout le monde"`
 
 ### Entree multi-lignes
-`cat << EOF > fichier.txt
+```bash
+cat << EOF > fichier.txt
 ligne 1
 ligne 2
-EOF`
+EOF
+```
 
 📌 variante
-`cat << 'EOF'
+```bash
+cat << 'EOF'
 $HOME ne sera pas expanse !
 EOF
-`
+```
 
 ## 4) Commande tee
 `dmesg | tee -a dmesg.log`
 affiche et ecrit a l'ecran
 
-⚠️  Attention la redirection est initie par le shell donc le sudo doit etre mis sur la commande qui ecrit
-`echo "test" | sudo tee /root/test.txt`
+⚠️  Attention la redirection est initiee par le shell donc le sudo doit etre mis sur la commande qui ecrit
+```bash echo "test" | sudo tee /root/test.txt```
 
 ===
 📌 À retenir
