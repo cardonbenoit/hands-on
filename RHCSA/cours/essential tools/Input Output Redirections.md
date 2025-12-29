@@ -6,30 +6,30 @@ date: 2025-12-29
 level: "Intermediate"
 tags: [shell, cli]
 ---
-## Objectifs
+## Objectifs  
 - Flux et Descripteur
 - commande tee
 - Utilisation de EOF 
 
-## 1) Concepts clés
-### Définitions
+## 1) Concepts clés  
+### Définitions  
 **Flux** et **Descripteurs de flux** 
  STDIN 0  
  STDOUT 1  
  STDERR 2  
 
-**Redirections**
+**Redirections**  
  **>** ecrase  
  **>>**  concatene  
  **<** `cmd < fic.txt` alimente cmd avec le contenu de fic.txt   
  **|** `cmd1 | cmd2` cmd1 alimente STDOUT et cmd2 le lit via STDIN   
 
-### Exemples
+### Exemples  
  `cmd 1> stdout.log 2> stderr.log`  
  `sort < noms.txt`  
  `ps aux | grep sshd`  
 
-## 2) Redirections combinees
+## 2) Redirections combinees 
 ⚠️  `cmd 2>&1 > log-partiel.log` stderr va vers **la ou va stdout** qui pour le moment est l'ecran, PUIS stdout va dans le fichier  
 ⚠️  `cmd > log-tout.log 2>&1` stdout va dans le fichier, PUIS stderr va **la au va** stdout  
 📌 `cmd &> log-tout.log`  
