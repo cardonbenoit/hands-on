@@ -1,16 +1,11 @@
-<style>
-  details.nomargin { margin: 0; padding: 0; }
-  details.nomargin > summary { margin: 0; padding: 0; list-style: none; }
-</style>
+<details>
+<summary><strong>Documenter l'Infra Maison</strong></summary>
 
-## Objet de ce repository ##
-> <details class="nomargin"><summary>Documenter l'Infra Maison</summary>
->    <ul>
->       <li> Modem FAI bridge</li>
->        <li> switch manage et vlan</li>
->        <li> Wifi multi-SSID</li>
->        <li> Lab sous PVE</li>
->    </ul>  
-> </details>
-> <strong>RHCSA: Garder notes de lectures et documentations</strong></br>  
-> <strong>Lab maison</strong>
+- Modem FAI bridge
+- Switch managé et VLAN
+- Wi-Fi multi-SSID
+- Lab sous PVE
+
+</details>
+**RHCSA : garder notes de lecture et documentation**
+**Lab maison**
