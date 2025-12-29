@@ -1,10 +1,11 @@
 ## Objet de ce repository ##
-- <details><summary>Infra Maison</summary>
-    - Modem FAI bridge
-    - switch manage et vlan
-    - Wifi multi-SSID
-    - Lab sous PVE
-  </details>  
+<details><summary>Documenter l'Infra Maison</summary>
+    <ul>
+        <li> Modem FAI bridge</li>
+        <li> switch manage et vlan</li>
+        <li> Wifi multi-SSID</li>
+        <li> Lab sous PVE</li>
+    </ul>  
+</details>  
 - **RHCSA**: Garder notes de lectures et documentations
-- **Lab maison*
-
+- **Lab maison**
