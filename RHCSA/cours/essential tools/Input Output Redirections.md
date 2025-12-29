@@ -13,12 +13,13 @@ tags: [shell, cli]
 
 ## 1) Concepts clés  
 ### Définitions  
-| **Flux** | **Descripteurs de flux** | 
+| **Flux** | **Descripteur** | 
+|--|--|
 | STDIN | 0 |
 | STDOUT | 1 |
 | STDERR | 2 |
 
-| **Redirections** | |
+| **Redir** | |
 |---|---|  
 | **>** | ecrase |
 | **>>**  | concatene |
