@@ -30,9 +30,9 @@ tags: [shell, cli]
 - `ps aux | grep sshd`
 
 ## 2) Redirections combinees
-- ⚠️  `cmd 2>&1 > log-partiel.log` stderr va vers **la ou va stdout** qui pour le moment est l'ecran, PUIS stdout va dans le fichier
-- ⚠️  `cmd > log-tout.log 2>&1` stdout va dans le fichier, PUIS stderr va **la au va** stdout
-- 📌 `cmd &> log-tout.log`
+⚠️  `cmd 2>&1 > log-partiel.log` stderr va vers **la ou va stdout** qui pour le moment est l'ecran, PUIS stdout va dans le fichier  
+⚠️  `cmd > log-tout.log 2>&1` stdout va dans le fichier, PUIS stderr va **la au va** stdout  
+📌 `cmd &> log-tout.log`  
 
 ## 3) Here-strings et Here-documents : <<< et <<
 
@@ -74,7 +74,7 @@ echo "test" | sudo tee /root/test.txt
 >
 > - Attention au piège sudo ... > fichier : la redirection n’est pas “sudo”.
 
-## 5) Flashcaard
+## 5) Flashcard
 <details>
 <summary><strong>Question :</strong><code>cmd 2> fic.log >&1 </code>Ou sont affichees les erreurs de cmd : ecran ou log ?</summary>
 <strong>Reponse :</strong>
