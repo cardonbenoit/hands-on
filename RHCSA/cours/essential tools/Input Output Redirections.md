@@ -13,7 +13,7 @@ tags: [shell, cli]
 
 ## 1) Concepts clés  
 ### Définitions  
-**Flux** et **Descripteurs de flux** 
+**Flux** et **Descripteurs de flux**  
  STDIN 0  
  STDOUT 1  
  STDERR 2  
