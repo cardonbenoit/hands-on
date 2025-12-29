@@ -1,5 +1,15 @@
+<style>
+  details.nomargin { margin: 0; padding: 0; }
+  details.nomargin > summary { margin: 0; padding: 0; list-style: none; }
+</style>
+
+<details class="nomargin">
+  <summary>Voir plus</summary>
+  <p>Contenu…</p>
+</details>
+
 ## Objet de ce repository ##
-> <details><summary>Documenter l'Infra Maison</summary>
+> <details.nomargin><summary>Documenter l'Infra Maison</summary>
 >    <ul>
 >       <li> Modem FAI bridge</li>
 >        <li> switch manage et vlan</li>
