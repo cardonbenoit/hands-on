@@ -7,5 +7,5 @@
 >        <li> Lab sous PVE</li>
 >    </ul>  
 > </details>  
-> **RHCSA**: Garder notes de lectures et documentations
-> **Lab maison**
+> <strong>RHCSA**: Garder notes de lectures et documentations</strong>
+> <strong>Lab maison</strong>
