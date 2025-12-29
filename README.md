@@ -3,13 +3,8 @@
   details.nomargin > summary { margin: 0; padding: 0; list-style: none; }
 </style>
 
-<details class="nomargin">
-  <summary>Voir plus</summary>
-  <p>Contenu…</p>
-</details>
-
 ## Objet de ce repository ##
-> <details.nomargin><summary>Documenter l'Infra Maison</summary>
+> <details class="nomargin"><summary>Documenter l'Infra Maison</summary>
 >    <ul>
 >       <li> Modem FAI bridge</li>
 >        <li> switch manage et vlan</li>
