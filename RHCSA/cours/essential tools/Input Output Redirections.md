@@ -63,18 +63,16 @@ affiche et ecrit a l'ecran
 echo "test" | sudo tee /root/test.txt
 ```
 
-===
-📌 À retenir
-- Toujours distinguer STDOUT vs STDERR.
-
-- Le pipe | ne prend que STDOUT (sauf si on merge avec 2>&1).
-
-- Ordre des redirections est important 
-
-- tee pour diagnostiquer sans perdre l’affichage.
-
-- Attention au piège sudo ... > fichier : la redirection n’est pas “sudo”.
-===
+> 📌 À retenir
+> - Toujours distinguer STDOUT vs STDERR.
+>
+> - Le pipe | ne prend que STDOUT (sauf si on merge avec 2>&1).
+>
+> - Ordre des redirections est important 
+>
+> - tee pour diagnostiquer sans perdre l’affichage.
+>
+> - Attention au piège sudo ... > fichier : la redirection n’est pas “sudo”.
 
 ## 5) Flashcaard
 <details>
