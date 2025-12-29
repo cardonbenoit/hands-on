@@ -79,7 +79,7 @@ echo "test" | sudo tee /root/test.txt
 ## 5) Flashcaard
 <details>
 <summary><strong>Question :</strong><code>cmd 2> fic.log >&1 </code>Ou sont affichees les erreurs de cmd : ecran ou log ?</summary>
-**Reponse**
+<strong>Reponse :</strong>
 Les erreurs dans le log et la sortie stdout va ou va stdout, donc l'ecran ici. En fait ici '>&1' = '1>&1'. Inutile donc en dehors de cet exercice de comprehension.
 </details>
 
