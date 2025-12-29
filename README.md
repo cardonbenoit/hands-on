@@ -7,5 +7,5 @@
 > - Lab sous PVE
 > 
 > </details>
-> <strong>RHCSA : garder notes de lecture et documentation</strong><br>
-> <strong>Lab maison</strong><br>
+> <strong>RHCSA : garder notes de lecture et documentation</strong><p />
+> <strong>Lab maison</strong>
