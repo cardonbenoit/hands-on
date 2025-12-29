@@ -1,1 +1,4 @@
-# Repository pour conserver notes et labs en vue de la certif RHCSA #
+# En vue de la certif RHCSA 
+- /cours : mes notes 
+- /lab : ma pratique
+

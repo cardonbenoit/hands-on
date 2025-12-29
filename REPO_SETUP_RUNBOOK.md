@@ -1,4 +1,4 @@
-    ---
+---
 theme: "Mise en place"
 module: "Documenter"
 titre: "Monter un repository git et GitHub"
@@ -6,8 +6,7 @@ date: 2025-12-28
 level: ""
 tags: [git,GitHub,ssh,markdown,glow]
 ---
-
-## 0) Objectifs
+## Objectifs
 - Documenter la mise en place de la documentation 
 - Creer un repository git local
 - Publier sur GitHub via ssh
@@ -46,7 +45,7 @@ tags: [git,GitHub,ssh,markdown,glow]
 - `ssh-add ~/.ssh/git_AAAAMMDD_hands-on` : charge la cle et on ne tape le mot de passe qu'une fois
 - `cd ~/hands-on; git config core.sshCommand 'ssh -i ~/.ssh/git_AAAAMMDD_hands-on'` : Dans le cas ou on cree une cle par repository 
 - `git config user.email '248338221+cardonbenoit@users.noreply.github.com'`
-- `git commit --amend --reset-author --no-edit` (si on fait la config apres un commit fait trop rapidement avant d'avoir peaufine la config avec la ligne ci-dessus)
+- `git commit --amend --reset-author --no-edit` (corriger,si besoin, l'auteur pour etre conforme a la policy choisie sur GitHub) 
 
 - `pbcopy < .ssh/git_AAAAMMDD_hands-on2.pub`
 - ** sur GitHib > Compte > Settings > SSH et GPG > New SSH key ** on ajoute la cle publique (toute la ligne dans .pub)
@@ -60,7 +59,7 @@ tags: [git,GitHub,ssh,markdown,glow]
 - `git remote add origin git@github.com:cardonbenoit/hands-on.git`
 - `git push -u origin master`
 
-
+<!--
 📌 À retenir / concepts
 🛠️ Commandes / actions
 🧪 Test / validation
@@ -69,3 +68,4 @@ tags: [git,GitHub,ssh,markdown,glow]
 🔒 Sécurité / hardening
 ✅ OK / validé / succès
 ❌ Erreur / à éviter
+-->
