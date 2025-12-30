@@ -31,7 +31,7 @@ permet que vi n'intercepte pas la souris et laisse faire le terminal
 
 ## Chercher dans man
 ### Rechercher sans ouvrir le man
-⚠️  man utilise un PAGER, souvent 'less'. Associe a un pipe 'less' sait qu'il n'est pas en mode interactif et qu'il doit envoyer sur stdout.  
+⚠️  man utilise un PAGER, souvent 'less'. Associé à un pipe, 'less' sait qu'il n'est pas en mode interactif et qu'il doit envoyer sur stdout.  
 ⚠️  Toutefois dans le man la mise en forme peut casser un grep.  
 La meilleur option est de filtrer avec col pour avoir un format **brut**   
 ```bash
@@ -42,12 +42,12 @@ grep -n donne le numero de ligne, -i l'insensitive-case
 grep -Cx donne les x lignes avant et apres pour avoir le contexte  
 
 ### Recherche dans man
-`man -P 'less -N' commande`
-man -P change le PAGER
-Dans less, on atteint la ligne 10 en tapant **10g** 
-Penser a la variable d'environnement LESS pour passer les options par defaut (notamment -N, -i, -g , --usecolor et --color=Nc)
-L'option less -g permet un highlight de l'occurence de recherche en cours selection
-On peut aussi utiliser MANPAGER='less <OPTIONS>'
+`man -P 'less -N' commande`  
+man -P change le PAGER  
+Dans less, on atteint la ligne 10 en tapant **10g**   
+Penser a la variable d'environnement LESS pour passer les options par defaut (notamment -N, -i, -g , --usecolor et --color=Nc)  
+L'option less -g permet un highlight de l'occurence de recherche en cours selection  
+On peut aussi utiliser MANPAGER='less <OPTIONS>'  
 
 ### Chercher une option précise
 `man rsync | col -bx | grep -n -E "(\-\-recursive|\-r)\b"`
