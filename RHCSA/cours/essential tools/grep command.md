@@ -7,35 +7,17 @@ level: "Intermediate"
 tags: [grep]
 ---
 
-## 0) Objectifs
-- []
-- []
+## Objectifs
+- [] Maitriser **grep** (Global Regular Expression Print)
 
-
-## 1) Concepts clés
-### Définitions
--
--
-
-### 📌 À retenir
-- 
--
-
-## 2) Modèle mental
-
-## 3) Commandes essentielles
-
-## 4) Pieges
-
-## 5) Flashcaard
-<details>
-<summary><strong>Question: </strong>Différence entre <code>systemctl start</code> et <code>systemctl enable</code> ?</summary>
-
-**Reponse:**
-- `start` : démarre maintenant
-- `enable` : démarre au boot (crée un lien dans le bon target)
-- `enable --now` : fait les deux
-</details>
+## 1) Options utiles
+- -i ignore la case
+- -n numero de ligne
+- -c nombre d'occurence
+- -v inVerse la recherche: affiche les lignes qui de matchent pas
+- -r Recursif sur tous les fichiers d'un repertoire 
+- -rI Recursif en ignorant les fichiers binaires
+- -w mot entier
 
 <!--
 📌 À retenir / concepts

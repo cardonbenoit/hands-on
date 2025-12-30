@@ -28,6 +28,8 @@ permet que vi n'intercepte pas la souris et laisse faire le terminal
 - g pour global
 - c pour confirm
 - i pour ignorer la casse
+ℹ️  \< / \> : début / fin de mot : Pas du POSIX, extension du moteur Vim
+
 ## sous vi on peut aussi utiliser sed
 ``:%!sed -E '47,66{/^[[:space:]]*$/d;}'`  
 
@@ -35,11 +37,14 @@ permet que vi n'intercepte pas la souris et laisse faire le terminal
 
 # Chercher dans man
 ## Rechercher sans ouvrir le man
-⚠️  man utilise un PAGER, souvent 'less'. Associe a un pipe 'less' sait qu'il n'est pas en mode interactif et qu'il doit envoyer sur stdout.
-⚠️  Toutefois dans le man la mise en forme peut casser un grep. La meilleur option est de filtrer avec col pour avoir un format **brut** 
-`man commande | col -bx | grep -niC5 "mot"`
-grep -n donne le numero de ligne, -i l'insensitive-case
-grep -Cx donne les x lignes avant et apres pour avoir le contexte
+⚠️  man utilise un PAGER, souvent 'less'. Associe a un pipe 'less' sait qu'il n'est pas en mode interactif et qu'il doit envoyer sur stdout.  
+⚠️  Toutefois dans le man la mise en forme peut casser un grep.  
+La meilleur option est de filtrer avec col pour avoir un format **brut**   
+```bash
+man commande | col -bx | grep -niC5 "mot"`  
+```
+grep -n donne le numero de ligne, -i l'insensitive-case  
+grep -Cx donne les x lignes avant et apres pour avoir le contexte  
 
 ## Recherche dans man
 `man -P 'less -N' commande`
@@ -51,7 +56,11 @@ On peut aussi utiliser MANPAGER='less <OPTIONS>'
 
 ## Chercher une option précise
 `man rsync | col -bx | grep -n -E "(\-\-recursive|\-r)\b"`
-L'otion -E : regexp etendues et \b limite de mot
+L'option -E : regexp etendues et \b limite de mot
+⚠️  Pour indiquer a grep la fin des options, utiliser --
+⚠️  Ca permet d'eviter le backquote des tirets
+`man rsync | col -bx | grep -En -- "(--recursive|-r)\b"`
+
 
 ## Trouver quel man contient un terme
 `whatis commande` But: donner une définition courte d’une commande par son nom
@@ -59,4 +68,3 @@ L'otion -E : regexp etendues et \b limite de mot
 
 ## Ouvrir directement sur une occurence
 `man commande | less +/mot`
-
