@@ -1,5 +1,4 @@
 ## Copier-Coller depuis/dans vi dans un terminal sous Mac
----
 On tape dans vi `:version`, s'il y a +clipboard alors on peut selectionner a la souris et coller dans le presse papier avec
 `"+y` 
 Dans ~/.vimrc :
@@ -7,7 +6,6 @@ Dans ~/.vimrc :
 permet que vi n'intercepte pas la souris et laisse faire le terminal
 
 ## Vi pour ajouter une ligne au-dessus/au=dessous
----
 `0` nouvelle ligne au-dessus
 `o` nouvelle ligne en-dessous
 
@@ -16,7 +14,6 @@ permet que vi n'intercepte pas la souris et laisse faire le terminal
 -p permet le pager less
 
 ## Substituer sous VI
----
 ### substituer **toutes** les occurences **dans la ligne**
 `:s/ancien/nouveau/gci`
 ### substituer **dans une plage de ligne** les occurences 
@@ -33,7 +30,6 @@ permet que vi n'intercepte pas la souris et laisse faire le terminal
 ``:%!sed -E '47,66{/^[[:space:]]*$/d;}'`  
 
 ## Chercher dans man
----
 ### Rechercher sans ouvrir le man
 ⚠️  man utilise un PAGER, souvent 'less'. Associe a un pipe 'less' sait qu'il n'est pas en mode interactif et qu'il doit envoyer sur stdout.  
 ⚠️  Toutefois dans le man la mise en forme peut casser un grep.  
