@@ -49,17 +49,17 @@ Penser a la variable d'environnement LESS pour passer les options par defaut (no
 L'option less -g permet un highlight de l'occurence de recherche en cours selection  
 On peut aussi utiliser MANPAGER='less <OPTIONS>'  
 
-### Chercher une option précise
-`man rsync | col -bx | grep -n -E "(\-\-recursive|\-r)\b"`
-L'option -E : regexp etendues et \b limite de mot
-⚠️  Pour indiquer a grep la fin des options, utiliser --
-⚠️  Ca permet d'eviter le backquote des tirets
-`man rsync | col -bx | grep -En -- "(--recursive|-r)\b"`
+### Chercher une option précise  
+`man rsync | col -bx | grep -n -E "(\-\-recursive|\-r)\b"`  
+L'option -E : regexp etendues et \b limite de mot  
+⚠️  Pour indiquer a grep la fin des options, utiliser -- 
+⚠️  Ca permet d'eviter le backquote des tirets  
+`man rsync | col -bx | grep -En -- "(--recursive|-r)\b"` 
 
 
 ### Trouver quel man contient un terme
-`whatis commande` But: donner une définition courte d’une commande par son nom
+`whatis commande` But: donner une définition courte d’une commande par son nom  
 `apropos commande` But: quelles pages de man parlent d’un mot-clé ?
 
 ### Ouvrir directement sur une occurence
-`man commande | less +/mot`
+`man commande | less +/mot`  
