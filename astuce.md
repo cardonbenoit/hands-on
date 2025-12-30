@@ -5,12 +5,12 @@ Dans ~/.vimrc :
 `set mouse=`
 permet que vi n'intercepte pas la souris et laisse faire le terminal
 
-## Vi pour ajouter une ligne au-dessus/au=dessous
-`0` nouvelle ligne au-dessus
-`o` nouvelle ligne en-dessous
+## Vi pour ajouter une ligne au-dessus/au-dessous
+`O` nouvelle ligne au-dessus  
+`o` nouvelle ligne en-dessous  
 
-# Visualiser un fichier md dans un terminal
-`glow -p FIC.md`
+## Visualiser un fichier md dans un terminal
+`glow -p FIC.md`  
 -p permet le pager less
 
 ## Substituer sous VI
