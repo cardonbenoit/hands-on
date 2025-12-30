@@ -1,6 +1,6 @@
 ## Copier-Coller depuis/dans vi dans un terminal sous Mac
 On tape dans vi `:version`, s'il y a +clipboard alors on peut selectionner a la souris et coller dans le presse papier avec
-`"+y` 
+`"+y`  
 Dans ~/.vimrc :
 `set mouse=`
 permet que vi n'intercepte pas la souris et laisse faire le terminal
