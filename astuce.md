@@ -51,8 +51,8 @@ On peut aussi utiliser MANPAGER='less <OPTIONS>'
 
 ### Chercher une option précise  
 `man rsync | col -bx | grep -n -E "(\-\-recursive|\-r)\b"`  
-L'option -E : regexp etendues et \b limite de mot  
-⚠️  Pour indiquer a grep la fin des options, utiliser -- 
+L'option -E : regexp etendues et \b limite de mot   
+⚠️  Pour indiquer a grep la fin des options, utiliser --  
 ⚠️  Ca permet d'eviter le backquote des tirets  
 `man rsync | col -bx | grep -En -- "(--recursive|-r)\b"` 
 
